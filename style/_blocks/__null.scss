@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+body{
+  color: #1B1C21;
+  font-size: 14px;
+  font-family: 'TT Lakes', sans-serif;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+a, button{
+  text-decoration: none;
+  border: none;
+  color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+}

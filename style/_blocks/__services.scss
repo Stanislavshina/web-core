@@ -1,0 +1,185 @@
+.services{
+  position: relative;
+  background-color: #F8F8F8;
+  &::before{
+    content: '';
+    position: absolute;
+    background-color: #41F6D7;
+    top: 24px;
+    left: 0;
+    width: 4px;
+    height: 40px;
+    border-radius: 0 20px 20px 0;
+  }
+  &__container{
+    padding: 24px 16px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  &__header{
+  }
+  &-header__menu{
+    display: none;
+  }
+  &-tabs{
+    &__nav{
+      margin-bottom: 24px;
+    }
+    &__list{
+      display: flex;
+      align-items: center;
+      overflow: auto;
+      gap: 25px;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      color: #7E7E82;
+    }
+    &__link{
+      white-space: nowrap;
+    }
+    &__item--active{
+      padding: 8px 9px 8px 16px;
+      border-radius: 6px;
+      border: 2px solid #B8FFEC;
+      background: #FFFFFF;
+    }
+    &-body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 25px;
+      &-description{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 16px;
+        &__info{
+        letter-spacing: 0.2px;
+        line-height: 18px;
+        font-size: 14px;
+        color: #1B1C21;
+        & span:last-child{
+          display: none;
+        }
+        }
+        &__img{
+          width: 320px;
+          height: 179px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 784px) and (min-width: 530px) {
+  .services{
+    &__container{
+      padding: 24px 40px 24px 24px;
+      gap: 32px;
+    }
+    &-tabs{
+      &__nav{
+        margin-bottom: 32px;
+      }
+      &-body{
+        flex-direction: row;
+        gap: 48px;
+        &-description{
+          gap: 10px;
+          &__info{
+            overflow: hidden;
+            height: 160px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            line-height: 17px;
+            & span:last-child{
+              display: block;
+            }
+          }
+          &__img{
+            border-radius: 8px;
+            width: 720px;
+            height: 208px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 785px) {
+  .services{
+    &::before{
+      border-radius: 2px;
+    }
+    &__container{
+      gap: 8px;
+    }
+    &__title{
+      margin-right: auto;
+    }
+    &-header{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 32px;
+        &__button{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          font-size: 16px;
+          line-height: 24px;
+          color: #1B1C21;
+          text-align: right;
+          letter-spacing: -0.2px;
+          font-weight: 500;
+        }
+      }
+    }
+    &-tabs{
+      &__nav{
+        margin-bottom: 20px;
+      }
+      &__list{
+        overflow: visible;
+        gap: 34px;
+        row-gap: 22px;
+        flex-wrap: wrap;
+      }
+      &__item--active{
+        padding: 8px 22px;
+      }
+      &-body{
+        flex-direction: row;
+        gap: 36px;
+        &-description{
+          overflow: visible;
+          height: auto;
+          &__info{
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+            & span:last-child{
+              display: block;
+            }
+          }
+          &__img{
+            width: 530px;
+            height: 310px;
+            border-radius: 8px;
+          }
+        }
+      }
+    }
+  }
+}
