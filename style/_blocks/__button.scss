@@ -1,5 +1,10 @@
 .button{
   cursor: pointer;
+  transition: all ease-in-out 0.5s;
+  &:hover{
+    background-color: rgb(181, 181, 57);
+    filter: drop-shadow(5px);
+  }
 }
 
 
