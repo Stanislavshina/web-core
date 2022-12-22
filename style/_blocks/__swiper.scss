@@ -1,0 +1,121 @@
+.software {
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  background: #F2F2F2;
+  &__title{
+    background: linear-gradient(270deg, #F8F8F8 0%, #FFFFFF 98.61%);
+    padding: 16px;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    text-transform: uppercase;
+    color: #7E7E82;
+    h3{
+      font-weight: 300;
+    } 
+  }
+  &__list{
+    padding: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    gap: 16px;
+  }
+  &__item{
+    max-width: 240px;
+    max-height: 72px;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+    background: #FFFFFF;
+    
+    // margin: 0 8px;
+    
+    cursor: pointer;
+  }
+  &__link{
+    display: flex;
+    align-items: center;
+    width: 100%;  
+    img{
+      margin-right: auto;
+    }
+  }
+  &-pag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 34px;
+    &__bullet{
+      width: 12px;
+      height: 12px;
+      background: #DDDDDD;
+      border-radius: 50%;
+      &--active{
+        background: #B5B6BC;
+      }
+    }
+  }
+  &__button{
+    display: none;
+  }
+}
+
+@media (max-width: 784px) and (min-width: 565px) {
+.software{
+  max-width: 768px;
+  &__title{
+    text-align: left;
+    margin-bottom: 24px;
+    padding-left: 24px;
+  }
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 160px;
+    gap: 15px;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 0 24px;
+  }
+  &-pag{
+    display: none;
+  }
+  &__button{
+    display: flex;
+    margin-left: 24px;
+    margin-bottom: 34px;
+  }
+}
+}
+
+@media (min-width: 785px){
+.software{
+  max-width: 1120px;
+  &__title{
+    text-align: left;
+    margin-bottom: 24px;
+    padding-left: 24px;
+  }
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 160px;
+    gap: 15px;
+    justify-content: flex-start;
+    overflow: hidden;
+    padding: 0 24px;
+  }
+  &-pag{
+    display: none;
+  }
+  &__button{
+    display: flex;
+    margin-left: 24px;
+    margin-bottom: 34px;
+  }
+}
+}
